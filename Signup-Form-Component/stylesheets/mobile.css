@@ -1,0 +1,153 @@
+:root {
+  --r: hsl(0, 100%, 74%);
+  --g: hsl(154, 59%, 51%);
+  --b: hsl(248, 32%, 49%);
+
+  --db: hsl(249, 10%, 26%);
+  --gb: hsl(246, 25%, 77%);
+  --w: rgb(255, 255, 255);
+
+  --ff: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--ff);
+  text-align: center;
+  color: var(--w);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 1rem 1rem;
+  font-size: 2rem;
+}
+
+h1::first-letter {
+  text-transform: uppercase;
+}
+
+p {
+  padding: 0rem 1rem 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  min-width: 100%;
+  padding: 1.5em 2em;
+  border-radius: 1rem;
+  border: none;
+
+  font-size: 1rem;
+  font-family: var(--ff);
+  color: var(--w);
+  font-weight: 300;
+  cursor: pointer;
+}
+
+input {
+  min-width: 100%;
+  border: 1px ridge var(--gb);
+  border-radius: 0.3rem;
+  margin: 0 0 1rem;
+  padding: 1rem 0rem;
+}
+
+input::placeholder {
+  font-family: var(--ff);
+  text-transform: capitalize;
+  font-weight: 700;
+  color: var(--db);
+}
+
+.pColor {
+  color: var(--w);
+  font-weight: 700;
+}
+.max-size {
+  display: block;
+  max-width: 12rem;
+}
+
+body {
+  font-size: 16px;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-color: var(--r);
+}
+
+.d-box {
+  max-width: 450px;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.paddings {
+  padding: 1rem 1rem;
+}
+
+.btn-promo {
+  background-color: var(--b);
+}
+
+.user-form {
+  background-color: var(--w);
+  margin: 2rem 0 0 0;
+  border-radius: 1rem;
+}
+
+.btn-claim {
+  background-color: var(--g);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.terms-text {
+  padding: 1rem 1.5rem 0;
+  color: var(--gb);
+  font-size: 0.6rem;
+  line-height: 2;
+}
+
+.terms-service {
+  color: var(--r);
+  font-family: var(--ff);
+  font-weight: 700;
+  font-size: 0.6rem;
+}
+
+@media (min-width: 333px) {
+  input {
+    padding-left: 1rem;
+  }
+  .user-form {
+    padding: 2rem 1.5rem;
+  }
+}

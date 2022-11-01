@@ -1,0 +1,164 @@
+:root {
+  --tittleColors: hsl(217, 19%, 35%);
+  --paragraphColors: hsl(214, 17%, 51%);
+  --b: hsl(212, 23%, 69%);
+  --background: hsl(210, 46%, 95%);
+  --neutral: rgb(255, 255, 255);
+
+  --ff: "Manrope", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-size: 13px;
+  font-family: var(--ff);
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--tittleColors);
+}
+
+p {
+  font-size: 0.9rem;
+  color: var(--paragraphColors);
+}
+
+.container {
+  max-width: 28.84rem;
+  margin: 0 auto;
+}
+
+.d-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-box img {
+  object-fit: cover;
+  object-position: 100% 50%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+@media (max-width: 991px) {
+  .img-box img {
+    max-height: 250px;
+  }
+}
+
+.information-card {
+  background-color: var(--neutral);
+  border-radius: 0 0 1rem 1rem;
+  position: relative;
+}
+
+.paddings {
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.paddings-bellow {
+  padding: 1rem 0rem 0.5rem;
+}
+
+.paddingsParah {
+  padding: 1rem 1.7rem 1rem 0;
+  line-height: 1.6;
+}
+
+.d-flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.avatar-box {
+  max-width: 50px;
+}
+.avatar {
+  border-radius: 10rem;
+}
+
+.profile-desc {
+  flex-basis: 57%;
+}
+
+.name {
+  text-transform: capitalize;
+  color: var(--tittleColors);
+  font-weight: 700;
+  padding-bottom: 0.3rem;
+}
+
+.share {
+  flex-basis: 10%;
+  border-radius: 40rem;
+  min-height: 35px;
+  min-width: 35px;
+  background-color: var(--background);
+  position: relative;
+}
+
+.share img {
+  position: absolute;
+  max-width: 20px;
+  right: 20%;
+  top: 20%;
+}
+
+.style-share {
+  justify-content: space-evenly;
+  background-color: var(--tittleColors);
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem 3rem 1rem 2rem;
+}
+
+.style-share p {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--b);
+  flex-basis: 20%;
+}
+
+.iconShare {
+  flex-basis: 60%;
+}
+
+.fa-brands {
+  font-size: 1.5rem;
+  color: var(--neutral);
+}
+
+.sIcon,
+.cIcon,
+.oIcon {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
