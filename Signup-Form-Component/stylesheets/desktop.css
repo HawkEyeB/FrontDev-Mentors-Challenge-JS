@@ -1,0 +1,48 @@
+@media (min-width: 992px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    text-align: start;
+  }
+
+  .d-box {
+    max-width: 1200px;
+    display: flex;
+  }
+  .d-flex {
+    max-width: 55%;
+    align-self: center;
+  }
+
+  .btn-promo {
+    font-size: 0.8rem;
+    padding: 1rem 3rem;
+
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.137);
+  }
+
+  .btn-claim {
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.137) inset;
+  }
+
+  .max-size {
+    max-width: 50rem;
+  }
+
+  .user-form {
+    margin: 1rem 0 0;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.137);
+  }
+
+  .info {
+    max-width: 45%;
+  }
+  .pr-tittle {
+    line-height: 1;
+    font-size: 3rem;
+  }
+} ;

@@ -54,7 +54,7 @@ a {
 button {
   min-width: 100%;
   padding: 1.5em 2em;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border: none;
 
   font-size: 1rem;
@@ -68,7 +68,6 @@ input {
   min-width: 100%;
   border: 1px ridge var(--gb);
   border-radius: 0.3rem;
-  margin: 0 0 1rem;
   padding: 1rem 0rem;
 }
 
@@ -112,12 +111,16 @@ body {
 
 .btn-promo {
   background-color: var(--b);
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.137);
 }
 
 .user-form {
   background-color: var(--w);
   margin: 2rem 0 0 0;
   border-radius: 1rem;
+  position: relative;
+
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.137);
 }
 
 .btn-claim {
@@ -127,6 +130,8 @@ body {
 
   text-transform: uppercase;
   font-weight: 500;
+
+  box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.137) inset;
 }
 
 .terms-text {
@@ -141,6 +146,76 @@ body {
   font-family: var(--ff);
   font-weight: 700;
   font-size: 0.6rem;
+}
+
+.input-box {
+  position: relative;
+  padding: 0 0 1rem 0;
+}
+
+.error-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.8rem 0.5rem 1rem 0;
+}
+
+.error-texts {
+  color: var(--r);
+  font-size: 0.7rem;
+  text-align: end;
+  padding: 0rem 0rem;
+}
+
+.succed-text {
+  border-radius: 2rem;
+  background-color: rgb(113, 190, 113);
+  max-width: 150px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  opacity: 0;
+}
+
+.opacityIn {
+  animation: fadeIn ease 8s;
+  opacity: 1;
+}
+
+.opacityOut {
+  animation: fadeOut ease 4s;
+  opacity: 0;
+}
+
+.succed-text p {
+  padding: 1rem 0 0 0;
+  text-align: center;
+}
+
+.colorHover {
+  filter: opacity(70%);
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media (min-width: 333px) {
