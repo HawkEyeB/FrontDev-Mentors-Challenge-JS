@@ -1,0 +1,178 @@
+:root {
+    --background: hsla(0, 36%, 70%, 0.132);
+    --texts: hsl(0, 36%, 70%);
+    --button: hsl(0, 93%, 68%);
+    --tittle: hsl(0, 6%, 24%);
+
+    --ff: 'Josefin Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+img, picture {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff);
+    text-transform: uppercase;
+    color: var(--tittle);
+}
+
+p {
+    font-family: var(--ff);
+    color: var(--texts);
+    line-height: 1.6;
+}
+
+.tittle {
+    font-weight: 300;
+    color: var(--texts);
+}
+
+body {
+    font-size: 16px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+}
+
+
+
+@media (max-width: 899px) {
+
+    .container {
+        max-width: 100vw;
+        margin: 0 auto;
+        padding: 0 auto;
+        overflow: hidden;
+    }
+
+    .img-box img {
+        min-width: 100vw;
+        max-height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+
+}
+
+.d-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: auto 0;
+
+}
+
+.logo-box {
+    width: 100%;
+    padding: 0rem 1rem 2rem 2rem;
+}
+
+.logo-box img {
+    float: left;
+}
+
+
+
+.text-information {
+    padding: 2rem 0;
+    max-width: 35rem;
+}
+
+.text-information h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    line-height: 1.1;
+    max-width: 30rem;
+
+    padding: 1rem 3rem;
+}
+
+.text-information p {
+    text-align: center;
+    padding: 0 1rem;
+
+}
+
+.email-box {
+    width: 100%;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.email-bar {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: inherit;
+    font-family: var(--ff);
+
+}
+
+.email-bar-ori {
+    border: 1px solid var(--texts);
+}
+
+
+.email-bar-alt {
+    border: 1px solid red;
+}
+
+.email-bar::placeholder {
+    font-family: var(--ff);
+    font-weight: 300;
+    word-spacing: 5px;
+
+    color: var(--texts);
+}
+
+.btn-check {
+    position: absolute;
+    right: 0;
+    top: -5%;
+    /* left: 78%; */
+
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.9rem;
+
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+
+    z-index: 2;
+    cursor: pointer;
+}
+
+.error {
+    position: absolute;
+    top: 15%;
+    right: 20%;
+}
+
+.error-message {
+    padding: 0.5rem 2rem;
+    color: red;
+
+}
+
+.hidden {
+    display: none;
+}

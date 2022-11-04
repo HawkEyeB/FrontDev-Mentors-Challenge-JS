@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="./stylesheets/mobile.css">
+    <link rel="stylesheet" href="./stylesheets/desktop.css">
+    <title>Base Apparel Coming Soon</title>
+</head>
+
+<body>
+    <main class="container">
+        <article class="d-box">
+            <div class="logo-box">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="img-box">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/hero-desktop.jpg" alt="Model girl">
+                    <img src="./images/hero-mobile.jpg" alt="">
+                </picture>
+            </div>
+            <div class="box">
+                <section class="text-information">
+                    <h1><span class="tittle">we're</span> coming soon</h1>
+                    <p>Hello fellow shoppers! We're currently building our new fashion store.
+                        Add your email below to stay
+                        up-to-date with announcements and our launch deals.</p>
+                </section>
+                <div class="email-box">
+                    <input class="email-bar email-bar-ori" id="emailBar" type="email" placeholder="Email Address">
+                    <button class="btn-check" onclick="validateEmail()"><img src="./images/icon-arrow.svg"
+                            alt=""></button>
+                    <img class="error hidden" src="./images/icon-error.svg" alt="">
+                    <p class="error-message hidden">hello</p>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+<script src="./script.js"></script>
+
+</html>
