@@ -18,6 +18,6 @@
 | Newbie |
 |:-------------------------------|
 |[Article Card Component](https://hawkeyeb.github.io/FrontDev-Mentors-Challenge-JS/Article-Card-Component/)|
-|[Interactive Rating Component](https://hawkeyeb.github.io/FrontDevMentorsChallenge-JS/Interactive-Rating-Component/)|
+|[Interactive Rating Component](https://hawkeyeb.github.io/FrontDev-Mentors-Challenge-JS/Interactive-Rating-Component/)|
 
 
