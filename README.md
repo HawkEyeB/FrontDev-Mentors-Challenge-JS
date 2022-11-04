@@ -19,5 +19,7 @@
 |:-------------------------------|
 |[Article Card Component](https://hawkeyeb.github.io/FrontDev-Mentors-Challenge-JS/Article-Card-Component/)|
 |[Interactive Rating Component](https://hawkeyeb.github.io/FrontDev-Mentors-Challenge-JS/Interactive-Rating-Component/)|
+|[Comming Soon Page](https://hawkeyeb.github.io/FrontDev-Mentors-Challenge-JS/Base-Apparel-Coming-Soon-Page/)|
+|[Signup Page]((https://hawkeyeb.github.io/FrontDev-Mentors-Challenge-JS/Signup-Form-Component/)|
 
 
