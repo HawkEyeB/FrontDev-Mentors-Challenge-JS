@@ -168,7 +168,7 @@ body {
 }
 
 .succed-text {
-  border-radius: 2rem;
+  border-radius: 5rem;
   background-color: rgb(113, 190, 113);
   max-width: 150px;
   position: absolute;
@@ -177,19 +177,14 @@ body {
   opacity: 0;
 }
 
-.opacityIn {
-  animation: fadeIn ease 8s;
-  opacity: 1;
-}
-
-.opacityOut {
-  animation: fadeOut ease 4s;
-  opacity: 0;
-}
-
 .succed-text p {
   padding: 1rem 0 0 0;
   text-align: center;
+}
+
+.opacityOut {
+  animation: fadeOut ease 8s;
+  opacity: 0;
 }
 
 .colorHover {
